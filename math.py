@@ -12,7 +12,7 @@ def _gcd(a, b):
 def _lcm(a,b):
     return (a * b)/_gcd(a,b)
 
-# returns the base b expasion of n
+# returns the base b expansion of n
 # where n has a base of 10
 def _base_expansion(n, b):
     _remainders = []
