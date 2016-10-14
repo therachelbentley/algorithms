@@ -8,3 +8,7 @@ def _gcd(a, b):
         return b
     else:
         return _gcd(b, r)
+
+def _lcm(a,b):
+    return (a * b)/_gcd(a,b)
+
