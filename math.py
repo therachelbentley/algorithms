@@ -25,3 +25,16 @@ def _base_expansion(n, b):
             _remainders = [r] + _remainders
     return int("".join(str(x) for x in _remainders))
 
+# n is a base b number 
+# b is the base of n
+# returns n as a base 10 number
+def _base_ten(n, b):
+    n = str(n)
+    k = 0
+
+    for i in n:
+        i = int(i)
+        k = b * k + i
+    
+    return(k)
+
