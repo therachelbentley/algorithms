@@ -8,6 +8,9 @@ def _gcd(a, b):
             a (int)
             b (int)
     """
+    a = abs(a)
+    b = abs(b)
+
     if(a < b):
         a, b = b, a
     r = a % b
