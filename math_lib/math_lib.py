@@ -28,7 +28,7 @@ def _lcm(a, b):
             a (int)
             b (int)
     """
-    return (a * b)/_gcd(a, b)
+    return abs((a * b)/_gcd(a, b))
 
 
 def _base_expansion(n, b):
@@ -41,12 +41,16 @@ def _base_expansion(n, b):
     """
     _remainders = []
     q, r = divmod(n, b)
+    
+    if q == 0:
+        _remainders.append(r)
 
     while q > 0:
         _remainders = [r] + _remainders
         q, r = divmod(q, b)
         if q == 0:
             _remainders = [r] + _remainders
+
     return int("".join(str(x) for x in _remainders))
 
 
