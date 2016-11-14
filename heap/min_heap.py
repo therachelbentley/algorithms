@@ -2,9 +2,10 @@ from algorithms.heap.util import _get_left_child, _get_right_child
 
 
 
-class MinHeapBuilder():
+class MinHeapSort():
 
     def __init__(self, arr):
+
         self._data = arr
         self._n = len(self._data)
 
@@ -30,6 +31,8 @@ class MinHeapBuilder():
         for i in range(self._n - 1, -1, -1):
             self._sift_down(i)
 
-    def get_heap(self):
+    def build_heap(self):
+
         self._generate_min_heap()
         return self._data
+
