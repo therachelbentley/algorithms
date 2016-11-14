@@ -2,7 +2,7 @@ from algorithms.heap.util import _get_left_child, _get_right_child
 
 
 
-class MinHeapSort():
+class MinHeapSort:
 
     def __init__(self, arr):
 

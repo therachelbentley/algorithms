@@ -1,6 +1,6 @@
 
 
-class HashChains():
+class HashChains:
 
     def __init__(self, cardinality):
         self._arr = [[] for i in range(cardinality)]
