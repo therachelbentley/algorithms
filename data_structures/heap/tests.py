@@ -1,4 +1,4 @@
-from algorithms.heap.min_heap import MinHeapSort
+from algorithms.data_structures.heap.min_heap import MinHeapSort
 
 
 min_heap = MinHeapSort([5, 9, 38, 7, 5, 80])

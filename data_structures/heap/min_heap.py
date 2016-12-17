@@ -1,4 +1,4 @@
-from algorithms.heap.util import _get_left_child, _get_right_child
+from algorithms.data_structures.util import get_left_child, get_right_child
 
 
 
@@ -12,8 +12,8 @@ class MinHeapSort:
     def _sift_down(self, i):
     
         min_index = i
-        left_child = _get_left_child(i)
-        right_child = _get_right_child(i)
+        left_child = get_left_child(i)
+        right_child = get_right_child(i)
         
         if left_child < self._n and self._data[left_child] < self._data[min_index]:
             min_index = left_child
