@@ -1,6 +1,6 @@
 
 
-class SelectionSort:
+class SelectionSort(object):
 
     def __init__(self, arr):
         self._arr = arr
@@ -17,5 +17,5 @@ class SelectionSort:
 
     		self._arr[i], self._arr[min_item] = self._arr[min_item], self._arr[i]
 
-    		
+
     	return self._arr

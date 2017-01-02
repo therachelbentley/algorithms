@@ -1,12 +1,12 @@
 
 
-class HashChains:
+class HashChains(object):
 
     def __init__(self, cardinality):
         self._arr = [[] for i in range(cardinality)]
 
     def find(self, key, query):
-        
+
         try:
             index = self._arr[key].index(query)
         except ValueError:
@@ -25,4 +25,3 @@ class HashChains:
         index = self.find(key, value)
         if index != -1:
             self._arr[key].pop(index)
-

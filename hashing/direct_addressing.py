@@ -1,6 +1,6 @@
 
 
-class DirectAddressing:
+class DirectAddressing(object):
 
     def __init__(self, arr_size):
         self.arr = [None]*arr_size

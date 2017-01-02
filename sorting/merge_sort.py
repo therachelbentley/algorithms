@@ -1,14 +1,19 @@
 import math
 
 
-class MergeSort():
+class MergeSort(object):
 
     def __init__(self, arr):
         self.arr = arr
 
+
     def sort_arr(self):
         return self._divide(self.arr)
 
+
+    # divide the array into smaller arrays
+    # until each array is of size 1
+    # then call merge on each subarray
     def _divide(self, arr):
         arr_size = len(arr)
 
@@ -22,6 +27,9 @@ class MergeSort():
 
         return self._merge(a, b)
 
+
+    # takes two sorted arrays and
+    # merges them together
     def _merge(self, a, b):
 
         sorted_arr = []
