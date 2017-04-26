@@ -1,11 +1,11 @@
-from algorithms.data_structures import util
+from datastructures import util
+
 
 class Traverse(object):
 
     def __init__(self, tree):
         self._tree = tree
         self._tree_size = len(tree)
-
 
     # order of exploration: left, root, right
     # starts at bottom-left node and explores
@@ -25,7 +25,6 @@ class Traverse(object):
         traverse(0)
 
         return order_of_traversal
-
 
     # order of exploration: root, left, right
     # starts at root node and traverses down

@@ -1,3 +1,3 @@
 # algorithms
 
-> a playground for practice
+> a playground to practice implementing algorithms in all sorts of languages

@@ -1,5 +1,4 @@
-from algorithms.data_structures.util import get_left_child, get_right_child
-
+from datastructures.util import get_left_child, get_right_child
 
 
 class MinHeapSort(object):

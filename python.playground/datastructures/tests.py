@@ -1,4 +1,4 @@
-from algorithms.data_structures.traverse import Traverse
+from datastructures.traverse import Traverse
 
 
 traverse = Traverse([4, 2, 5, 1, 3])
