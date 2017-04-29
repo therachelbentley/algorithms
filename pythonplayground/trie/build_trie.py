@@ -10,8 +10,8 @@ def build_trie(strings):
             are a dictionary of that nodes children.
     """
 
-    # initialize the trie with a root node
-    trie = {0: {}}
+    # initialize trie
+    trie = {}
 
     # keep track of what the next node id should be
     new_node = 1
