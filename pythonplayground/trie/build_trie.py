@@ -18,8 +18,7 @@ def build_trie(strings):
 
     for string in strings:
         current_node = 0
-        for i in range(0, len(string)):
-            character = string[i]
+        for character in string:
 
             # if the current node does not exist in the dict then add it
             if not current_node in trie:
