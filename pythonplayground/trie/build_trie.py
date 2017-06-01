@@ -7,7 +7,7 @@ def build_trie(strings):
             strings (list): A list of strings.
         Output:
             A dictionary where the keys are the node ids and the values
-            are a dictionary of that nodes children.
+            are a dictionary of the node's children.
     """
 
     # initialize trie
@@ -25,7 +25,7 @@ def build_trie(strings):
                 trie[current_node] = {}
 
             # if the character is already a child of the current node
-            # then set the current node to be the character node"s id
+            # then set the current node to be the character node's id
             # else create a new node for that character
             if character in trie[current_node]:
                 current_node = trie[current_node][character]
