@@ -1,12 +1,13 @@
+from datastructures.linkedlists import LinkedList
 from datastructures.linkedlists import Node
 
 
-class SinglyLinkedList(object):
+class SinglyLinkedList(LinkedList):
     """ Class for a Singly Linked List.
     """
 
     def __init__(self, head=None):
-        self.head = head
+        super(SinglyLinkedList, self).__init__(head)
 
     def insert_one(self, data):
         """ Inserts data into the list.
@@ -21,49 +22,6 @@ class SinglyLinkedList(object):
 
         # now set head to the new node
         self.head = new_node
-
-    def size(self):
-        """ Gets the size of the linked list.
-        
-            Runtime:
-                O(N), N is linked list size.
-
-            Returns:
-                Size of list.
-        """
-        # start at head of list
-        current = self.head
-        count = 0
-
-        # keep count while traversing through list
-        while current:
-            count += 1
-            current = current.get_next()
-        return count
-
-    def find_one(self, data):
-        """ Finds the first occurence of data.
-        
-            Runtime:
-                O(N) for worst case,
-                where N is the size 
-                of the linked list.
-
-            Returns:
-                The node if data is found.
-                None if data not found.
-        """
-        # start at head of list
-        current = self.head
-
-        # traverse through list to find data
-        while current:
-
-            # once data is found, return node
-            if current.get_data() == data:
-                return current
-            else:
-                current = current.get_next()
 
     def delete_one(self, data):
         """ Deletes the first occurence of data.
